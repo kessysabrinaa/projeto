@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #171111;
+    display: inline-block;
+    width: 1360px;
+    padding-top: 20px;
+    padding-right: 6px;
+    position: fixed;
+}
+.center a{
+    text-decoration: none;
+    padding: 30px;
+    color:rgba(244, 215,194,0.8); 
+    letter-spacing: 0.9px;
+    vertical-align: middle; 
+    font-family: 'Rubik Mono One', sans-serif; 
+}
+div.center{
+    text-align: center;
+    display: inline;
+    margin-left: 300px;
+}
+img#left{
+    float:left;
+    width: 150px;
+    margin-bottom: 15px;
+}
+img#right{
+    float: right;
+    margin-right: 10px;
+}
+section.banner{
+    background-image: url("../img/motorosa1.jpg");
+    background-repeat: round;
+    width: 1300px;
+    height: 615px;
+    text-align: center;
+    padding: 10px ;
+}
