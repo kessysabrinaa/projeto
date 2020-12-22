@@ -1,28 +1,26 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Rubik Mono One', sans-serif; 
+    color:rgba(244, 215,194,0.8);
+    background-color: #443333;
 }
 header{
-    background-color: #171111;
+    background-color: #171111 !important;
     display: inline-block;
     width: 1360px;
     padding-top: 20px;
     padding-right: 6px;
     position: fixed;
+    box-shadow: 5px 5px 5px rgba(0,0,0, 0.5);
 }
-.center a{
-    text-decoration: none;
-    padding: 30px;
-    color:rgba(244, 215,194,0.8); 
+#naveg a{
+    text-decoration: none;    
     letter-spacing: 0.9px;
     vertical-align: middle; 
-    font-family: 'Rubik Mono One', sans-serif; 
+    background-color: #171111 !important;
 }
-div.center{
-    text-align: center;
-    display: inline;
-    margin-left: 300px;
-}
+
 img#left{
     float:left;
     width: 150px;
@@ -35,8 +33,139 @@ img#right{
 section.banner{
     background-image: url("../img/motorosa1.jpg");
     background-repeat: round;
-    width: 1300px;
+    width: 1249px;
     height: 615px;
     text-align: center;
-    padding: 10px ;
+    padding: 50px;
+}
+.banner p{
+    margin: 400px;
+    background-color: rgba(68,51,51,0.8);
+    padding: 20px;
+    border-radius: 20px;    
+}
+p.botao{
+    background-color:rgba(244, 215,194,0.3);
+    color:rgba(68,51,51,0.8);
+    padding: 20px;
+    border-radius: 20px; 
+    width: 300px;
+    text-align: center;
+    margin: 20px 400px;
+}
+#sobreNos, #modelosProntos, #montaraSua{
+    margin: 80px 100px;
+    line-height: 50px;
+    word-spacing: 2px;
+    letter-spacing: 1.5px;
+}
+
+hr.barinha{
+    background-color: rgba(244, 215,194);
+    height: 3px;
+    margin: 50px 0px;
+}
+p#titulo{
+    font-size: 24px;
+    letter-spacing: 10px;
+}
+p.preco{
+    color: black !important;
+    font-size: 20px;
+    text-align: center;
+}
+img#moto{
+    width: 500px;
+    height: 400px;
+}
+#modelosProntos{
+    display: inline-block;
+}
+div.moto{
+    display:flex;
+    margin-left: 60px;
+}
+
+div.moto.um{
+    float: left;
+}
+div.moto.dois{
+    float: right;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #171111;
+}
+footer img{
+    margin-bottom: 50px; 
+}
+footer p{
+    background-color: #171111 !important;
+}
+nav#naveg{
+    background-color: #171111;    
+    text-align: center;
+    display: inline;
+    margin-left: 300px;
+}
+#toggleId{
+    display: none;
+}
+    
+
+
+
+@media screen and (max-width: 768px) {
+    #toggleId{
+        display: block;
+        background-color: #171111; 
+        float: left;
+        margin-bottom: 10px;
+    }
+    .show {
+        left: 0;
+      }
+    nav{
+        left: -100%;
+    }
+    img.seta{
+        display: block;
+        margin: 10px 0px;
+    }
+    section#modelosProntos{
+        margin: 80px 10px;
+    }
+    #modelosProntos #titulo, 
+    #modelosProntos .barinha{
+        margin: 10px 100px;
+    }
+    section.banner{
+        width: 575px;
+    }
+    .banner p{
+        margin: 400px 40px;
+    }
+    img#left{
+        margin-left: 200px;
+    }
+    header{
+        text-align: center;
+    }
+    img#moto{
+        width: 300px;
+        margin-left: 50px;
+    }
+    p.botao{
+        margin: 50px 10px;
+    }
+    #modelosProntos #titulo{
+        letter-spacing: 6px;
+        font-size: 20px;
+    } 
+    div.outros{
+        display: none;
+    }
+
+    
 }
