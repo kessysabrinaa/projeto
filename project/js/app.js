@@ -43,15 +43,16 @@ async function incluirMotosProntasnoDOM(){
     const motos = await buscarMotoPorType('pronto'),
         container = document.querySelector("#modelosProntos");
     for(const moto of motos){
-        const {name, price, image} = moto,
+        const {price, image} = moto,
         preco = price.toLocaleString("pt-br", {style: "currency", currency: "BRL"});
-        container.innerHTML += ´
+        container.innerHTML += `
             <div class="moto">
-                <img src="img/moto1.png" id="moto">
-                <p class="preco"> R$ 9999,99</p>
+                <img src=${BASE_URL}${image.url} id="moto">
+                <p class="preco"> ${preco}</p>
             </div>
-            ´
-            ;    
+            `
+            ;
+        
     }
 
 }
