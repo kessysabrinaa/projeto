@@ -73,25 +73,26 @@ p.preco{
     color: black !important;
     font-size: 20px;
     text-align: center;
+    margin: 20px;
+}
+div.info{
+    display: inline;
 }
 img#moto{
     width: 500px;
-    height: 400px;
+    height: 400px;    
+    margin-right: 180px;
 }
 #modelosProntos{
     display: inline-block;
+    padding: 20px;
 }
 div.moto{
     display:flex;
     margin-left: 60px;
 }
 
-div.moto.um{
-    float: left;
-}
-div.moto.dois{
-    float: right;
-}
+
 footer{
     text-align: center;
     padding: 20px;
